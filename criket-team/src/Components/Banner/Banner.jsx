@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types';
 
 const Banner = ({handleAddFreeCoins}) => {
     return (
@@ -15,5 +15,9 @@ const Banner = ({handleAddFreeCoins}) => {
         </div>
     );
 };
+
+Banner.propTypes={
+    handleAddFreeCoins:PropTypes.func.isRequired
+}
 
 export default Banner;

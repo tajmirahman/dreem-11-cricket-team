@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-const Player = ({player}) => {
+const Player = ({player,handleAddToCart}) => {
 
     const {img,name,country,speciality,style,price }=player;
     return (
@@ -26,7 +26,7 @@ const Player = ({player}) => {
                         </div>
                         <div className='flex justify-between mb-2'>
                             <p className='font-bold'>Price-$ {price}</p>
-                            <button className='border-2 border-gray-200 p-2'>Choose Player</button>
+                            <button onClick={()=>handleAddToCart(player)} className='border-2 border-gray-200 p-2 bg-yellow-200'>Choose Player</button>
                         </div>
                         
                     </div>
@@ -37,6 +37,7 @@ const Player = ({player}) => {
 
 Player.propTypes={
     player:PropTypes.object.isRequired,
+    handleAddToCart:PropTypes.func.isRequired
 }
 
 export default Player;

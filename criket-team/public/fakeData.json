@@ -14,7 +14,7 @@
         "name": "Mustafur Rahman",
         "country": "Bangadesh",
         "speciality": "Bowler",
-        "style": "Left Hand Fast Bowler",
+        "style": "Fast Bowler",
         "price": 1300000
     },
     {
@@ -23,7 +23,7 @@
         "name": "Taskin Ahmed",
         "country": "Bangledesh",
         "speciality": "All-Rounder",
-        "style": "Right Hand Fast Bowler",
+        "style": "Fast Bowler",
         "price": 1500000
     },
     {
@@ -59,7 +59,7 @@
         "name": "Showab Akter",
         "country": "Pakistan",
         "speciality": "Bowler",
-        "style": "Right Hand Fast Bowler",
+        "style": " Fast Bowler",
         "price": 1250000
     },
     {
@@ -77,7 +77,7 @@
         "name": "Shakib Al Hasan",
         "country": "Bangladesh",
         "speciality": "All-Rounder",
-        "style": "Left Hand Spin Bowler",
+        "style": "Spin Bowler",
         "price": 1400000
     },
     {
@@ -86,7 +86,7 @@
         "name": "Pat Cummins",
         "country": "Australia",
         "speciality": "Bowler",
-        "style": "Left Hand Fast Bowler",
+        "style": "Fast Bowler",
         "price": 1450000
     },
     {

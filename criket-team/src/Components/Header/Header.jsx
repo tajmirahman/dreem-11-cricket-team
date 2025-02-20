@@ -1,6 +1,6 @@
+import PropTypes from 'prop-types';
 
-
-const Header = () => {
+const Header = ({addFCoins}) => {
     return (
         <div className="flex justify-between items-center px-20 py-5">
             <div>
@@ -14,11 +14,15 @@ const Header = () => {
                         <li>Teams</li>
                         <li>Schedules</li>
                     </ul>
-                    <p className="text-2xl border-2 border-e-gray-50 font-bold">$ 500 Coin</p>
+                    <p className="text-2xl border-2 border-e-gray-50 font-bold">$ {addFCoins} Coin</p>
                 </div>
             </div>
         </div>
     );
 };
+
+Header.propTypes={
+    addFCoins:PropTypes.func.isRequired,
+}
 
 export default Header;
