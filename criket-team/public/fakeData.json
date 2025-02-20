@@ -1,0 +1,101 @@
+[
+    {
+        "id": 1,
+        "img": "https://i.ibb.co.com/1Hrj9Nc/download-3.jpg",
+        "name": "Rohit Sharma",
+        "country": "India",
+        "speciality": "Batsman",
+        "style": "Right Hand Batsman",
+        "price": 1200000
+    },
+    {
+        "id": 2,
+        "img": "https://i.ibb.co.com/DfXrwwgm/download-10.jpg",
+        "name": "Mustafur Rahman",
+        "country": "Bangadesh",
+        "speciality": "Bowler",
+        "style": "Left Hand Fast Bowler",
+        "price": 1300000
+    },
+    {
+        "id": 3,
+        "img": "https://i.ibb.co.com/bRDfBZjb/download-9.jpg",
+        "name": "Taskin Ahmed",
+        "country": "Bangledesh",
+        "speciality": "All-Rounder",
+        "style": "Right Hand Fast Bowler",
+        "price": 1500000
+    },
+    {
+        "id": 4,
+        "img": "https://i.ibb.co.com/DHj5yJbH/download-8.jpg",
+        "name": "Mehedi Hassan Miraz",
+        "country": "Bangladesh",
+        "speciality": "All-Rounder",
+        "style": "Spin Bowler",
+        "price": 1100000
+    },
+    {
+        "id": 5,
+        "img": "https://i.ibb.co.com/S4Dq1r5p/download-6.jpg",
+        "name": "Jaker Ali",
+        "country": "Bangladesh",
+        "speciality": "All-Rounder",
+        "style": "Spin Mid Bowler",
+        "price": 1400000
+    },
+    {
+        "id": 6,
+        "img": "https://i.ibb.co.com/DHdTcCWq/download-5.jpg",
+        "name": "Tamin Iqbal",
+        "country": "Bangladesh",
+        "speciality": "Batsman",
+        "style": "Right Hand Batsman",
+        "price": 1350000
+    },
+    {
+        "id": 7,
+        "img": "https://i.ibb.co.com/JjPCzZtR/download-4.jpg",
+        "name": "Showab Akter",
+        "country": "Pakistan",
+        "speciality": "Bowler",
+        "style": "Right Hand Fast Bowler",
+        "price": 1250000
+    },
+    {
+        "id": 8,
+        "img": "https://i.ibb.co.com/Q7wChV61/download-1.jpg",
+        "name": "Towhid Hredoy",
+        "country": "Bangadesh",
+        "speciality": "Batsman",
+        "style": "Left Hand Batsman",
+        "price": 1200000
+    },
+    {
+        "id": 9,
+        "img": "https://i.ibb.co.com/XZgVtz86/download.jpg",
+        "name": "Shakib Al Hasan",
+        "country": "Bangladesh",
+        "speciality": "All-Rounder",
+        "style": "Left Hand Spin Bowler",
+        "price": 1400000
+    },
+    {
+        "id": 10,
+        "img": "https://i.ibb.co.com/nssbbPgD/download-11.jpg",
+        "name": "Pat Cummins",
+        "country": "Australia",
+        "speciality": "Bowler",
+        "style": "Left Hand Fast Bowler",
+        "price": 1450000
+    },
+    {
+        "id": 11,
+        "img": "https://i.ibb.co.com/YFvq1Km0/download-2.jpg",
+        "name": "Virat Kohli",
+        "country": "India",
+        "speciality": "Batsman",
+        "style": "Right Hand Batsman",
+        "price": 1600000
+    }
+]
