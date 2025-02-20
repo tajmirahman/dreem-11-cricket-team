@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import Cart from '../Cart/Cart';
 
-const Schedule = ({ carts }) => {
+const Schedule = ({ carts, handleDeleteFormCart }) => {
 
     return (
         <div>
@@ -9,7 +9,10 @@ const Schedule = ({ carts }) => {
 
             <div>
                 {
-                    carts.map(cart=> <Cart key={cart.id} cart={cart}></Cart>)
+                    carts.map(cart => <Cart
+                        key={cart.id} cart={cart}
+                        handleDeleteFormCart={handleDeleteFormCart}
+                    ></Cart>)
                 }
             </div>
 
@@ -20,8 +23,9 @@ const Schedule = ({ carts }) => {
     );
 };
 
-Schedule.propTypes={
-    carts:PropTypes.object.isRequired
+Schedule.propTypes = {
+    carts: PropTypes.object.isRequired,
+    handleDeleteFormCart: PropTypes.func.isRequired
 }
 
 export default Schedule;

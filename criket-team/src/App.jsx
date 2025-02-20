@@ -40,9 +40,17 @@ function App() {
       .then(data => setPlayers(data))
   }, []);
 
-  // Add Free Coins for main account
+  // Add Free Coins for useState
   const [addFCoins, setAddFCoins] = useState(0);
 
+  // Decrement Price when player add to cart
+  const handleDecrement = (price) => {
+    setAddFCoins(addFCoins - price);
+  }
+
+   
+
+  // add Free Coins handler
   const handleAddFreeCoins = () => {
 
     const newBlance = addFCoins + 2000000;
@@ -55,12 +63,17 @@ function App() {
   // state decilared for add to cart
   const [carts, setCarts] = useState([])
 
+
+
+
   // Add To Cart section
   const handleAddToCart = (cart) => {
 
-    if (addFCoins <= 0) {
+    const isExist = carts.find(p => p.id === cart.id);
+
+    if (addFCoins < cart.price) {
       toast.warning('No more balance! Please add more coins to continue.');
-      return;
+      return
     }
 
     if (carts.length >= 6) {
@@ -68,16 +81,16 @@ function App() {
       return
     }
 
-    const isExist = carts.find(p => p.id === cart.id);
-
     if (isExist) {
       toast.warning('No More Player choose!')
+      return;
     }
-    else {
-      const newCart = [...carts, cart];
-      setCarts(newCart);
-      toast.success('Congratulations! Player added to the cart.');
-    }
+
+    handleDecrement(cart.price);
+
+    const newCart = [...carts, cart];
+    setCarts(newCart);
+    toast.success('Congratulations! Player added to the choose list.');
 
   }
 
@@ -103,6 +116,7 @@ function App() {
         players={players}
         handleAddToCart={handleAddToCart}
         carts={carts}
+       
       ></Container>
 
 

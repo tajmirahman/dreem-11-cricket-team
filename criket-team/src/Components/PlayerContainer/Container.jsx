@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import Schedule from '../Schedule/Schedule';
 import Available from '../Available/available';
 
-const Container = ({ handleButtons, isActive, players, handleAddToCart,carts }) => {
+const Container = ({ handleButtons, isActive, players, handleAddToCart, carts, }) => {
 
     return (
         <div className="px-20 mb-10">
@@ -20,7 +20,10 @@ const Container = ({ handleButtons, isActive, players, handleAddToCart,carts }) 
                         players={players}
                         handleAddToCart={handleAddToCart}
                     ></Available> :
-                        <Schedule carts={carts}></Schedule>
+                        <Schedule
+                            carts={carts}
+                            
+                        ></Schedule>
                 }
             </div>
 
@@ -32,8 +35,9 @@ Container.propTypes = {
     handleButtons: PropTypes.func.isRequired,
     isActive: PropTypes.object.isRequired,
     players: PropTypes.object.isRequired,
-    handleAddToCart:PropTypes.func.isRequired,
-    carts:PropTypes.object.isRequired,
+    handleAddToCart: PropTypes.func.isRequired,
+    carts: PropTypes.object.isRequired,
+   
 }
 
 export default Container;
