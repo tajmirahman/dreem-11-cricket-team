@@ -2,9 +2,9 @@
 
 const NewsLetter = () => {
     return (
-        <div>
+        <div className="p-4">
 
-            <section className="relative z-10 -mt-16 max-w-3xl mx-auto bg-gradient-to-r from-blue-100 to-orange-100 p-8 rounded-2xl shadow-lg text-center">
+            <section className="relative z-10  lg:max-w-3xl mx-auto bg-gradient-to-r from-blue-100 to-orange-100 p-8 rounded-2xl shadow-lg text-center">
                 <h2 className="text-2xl font-semibold text-gray-900">Subscribe to our Newsletter</h2>
                 <p className="text-gray-600 mt-2">Get the latest updates and news right in your inbox!</p>
                 <div className="mt-4 flex justify-center">

@@ -2,45 +2,35 @@
 
 const Footer = () => {
     return (
-        <div>
+        <div className="p-20">
 
-            <footer className="footer bg-base-200 text-base-content p-10">
-                <nav>
-                    <h6 className="footer-title">Services</h6>
-                    <a className="link link-hover">Branding</a>
-                    <a className="link link-hover">Design</a>
-                    <a className="link link-hover">Marketing</a>
-                    <a className="link link-hover">Advertisement</a>
-                </nav>
-                <nav>
-                    <h6 className="footer-title">Company</h6>
-                    <a className="link link-hover">About us</a>
-                    <a className="link link-hover">Contact</a>
-                    <a className="link link-hover">Jobs</a>
-                    <a className="link link-hover">Press kit</a>
-                </nav>
-                <nav>
-                    <h6 className="footer-title">Legal</h6>
-                    <a className="link link-hover">Terms of use</a>
-                    <a className="link link-hover">Privacy policy</a>
-                    <a className="link link-hover">Cookie policy</a>
-                </nav>
-                <form>
-                    <h6 className="footer-title">Newsletter</h6>
-                    <fieldset className="form-control w-80">
-                        <label className="label">
-                            <span className="label-text">Enter your email address</span>
-                        </label>
-                        <div className="join">
-                            <input
-                                type="text"
-                                placeholder="username@site.com"
-                                className="input input-bordered join-item" />
-                            <button className="btn btn-primary join-item">Subscribe</button>
-                        </div>
-                    </fieldset>
-                </form>
-            </footer>
+            <div className="grid grid-cols-3 p-5">
+                <div className="w-5/6">
+                    <h1 className="text-xl font-bold">About Us</h1>
+                    <p className="">We are a passionate team dedicated to providing the best services to our customers.</p>
+                </div>
+                <div>
+                    <h1 className="text-xl font-bold">Quick Links</h1>
+                    <ul>
+                        <li>Home</li>
+                        <li>Service</li>
+                        <li>About</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <div >
+                    <h1 className="text-xl font-bold">Subscribe</h1>
+                    <p className="w-5/6 text-center mb-10">Subscribe to our newsletter for the latest updates.</p>
+                    <div className="lg:flex">
+                        <input className="p-3  rounded-l-lg border border-gray-300 focus:outline-none" type="text" placeholder="subscribe" />
+
+                        <button className="bg-gradient-to-r from-pink-500 to-yellow-500 text-white px-2 py-3 rounded-r-lg font-semibold">
+                        Subscribe
+                    </button>
+                    </div>
+                </div>
+
+            </div>
 
         </div>
     );
