@@ -7,6 +7,8 @@ import Container from './Components/PlayerContainer/Container'
 // for toaster
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import NewsLetter from './Components/NewsLetter/NewsLetter';
+import Footer from './Components/Footer/Footer';
 
 
 function App() {
@@ -48,7 +50,7 @@ function App() {
     setAddFCoins(addFCoins - price);
   }
 
-   
+
 
   // add Free Coins handler
   const handleAddFreeCoins = () => {
@@ -103,21 +105,36 @@ function App() {
   return (
     <>
 
-      {/* header section */}
+      <div className='flex flex-col '>
 
-      <Header addFCoins={addFCoins}></Header>
-      <Banner handleAddFreeCoins={handleAddFreeCoins}></Banner>
+        {/* header section */}
 
-      {/* header section */}
+        <Header addFCoins={addFCoins}></Header>
+        <Banner handleAddFreeCoins={handleAddFreeCoins}></Banner>
 
-      <Container
-        handleButtons={handleButtons}
-        isActive={isActive}
-        players={players}
-        handleAddToCart={handleAddToCart}
-        carts={carts}
-       
-      ></Container>
+        {/* header section */}
+
+        <main className='flex-grow bg-white p-8'>
+          <div className=' mx-auto'>
+            <Container
+              handleButtons={handleButtons}
+              isActive={isActive}
+              players={players}
+              handleAddToCart={handleAddToCart}
+              carts={carts}
+
+            ></Container>
+          </div>
+        </main>
+
+        <NewsLetter></NewsLetter>
+
+        <div className='bg-gray-900 text-white text-center py-6 mt-[-4rem] relative z-0'>
+
+          <Footer></Footer>
+        </div>
+
+      </div>
 
 
       {/* Toast container start*/}
